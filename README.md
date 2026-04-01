@@ -29,9 +29,9 @@ O GameHub aciona o motor `ram.sh` do ZramTG24 para garantir que a swap esteja li
 
 O módulo já configura o binário no sistema via `service.sh`.
 1. Abra o **Termux**.
-2. Digite `su` e depois `gamehub`.
+2. Digite `game`.
 3. Siga o menu para adicionar jogos, configurar a whitelist ou iniciar a jogatina.
 
 ---
-**Desenvolvido por @Inrryoff para a comunidade Moto G24.**
+**Desenvolvido por [@inrryoff](https://github.com/inrryoff) para a comunidade Moto G24.**
 *Nota: O modo "Jogar" encerrará apps abertos. Salve seu progresso antes de iniciar.*
