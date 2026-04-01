@@ -1,0 +1,6 @@
+id=gamehub_termux
+name=GameHub_V1
+version=v2.0
+versionCode=20
+author=Inrryoff
+description=Otimizador de jogos para rodar via Termux. Comando: game
