@@ -6,8 +6,8 @@ O **GameHub** é um ecossistema de otimização de baixo nível desenvolvido esp
 
 Este módulo **NÃO** é genérico. Ele foi projetado sob medida:
 *   **📱 Dispositivo Alvo:** Exclusivo para **Moto G24**.
-*   **⚡ Compatibilidade:** Testado e funcional no **Moto G24 Power**.
-*   **🛠️ Ambiente:** Desenvolvido e otimizado em **GSI (Generic System Image)**.
+*   **⚡ Compatibilidade:** Não testado porem em tese deve ra ser compativel não recomendado o uso deste modulo para **Moto G24 Power** e qualquer outro dispositivo.
+*   **🛠️ Ambiente:** Desenvolvido e otimizado em **GSI: CrDroid**.
 *   **🚧 Versão Stock:** A versão para a ROM Original (Stock) ainda está em fase de desenvolvimento e testes. Use por sua conta e risco em ROMs Stock.
 
 ## 🛡️ REQUISITO OBRIGATÓRIO
@@ -33,5 +33,8 @@ O módulo já configura o binário no sistema via `service.sh`.
 3. Siga o menu para adicionar jogos, configurar a whitelist ou iniciar a jogatina.
 
 ---
-**Desenvolvido por [@inrryoff](https://github.com/inrryoff) para a comunidade Moto G24.**
-*Nota: O modo "Jogar" encerrará apps abertos. Salve seu progresso antes de iniciar.*
+## 👤 Créditos e Licença*
+* **Desenvolvedor**: [@inrryoff](https://github.com/inrryoff)
+* **Licença:** MIT (Pode usar e modificar, desde que mantenha os créditos ao autor original).
+* **Projeto**: Game Hub ProX G24
+
