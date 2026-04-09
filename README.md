@@ -36,8 +36,8 @@ O GameHub aciona o motor `ram.sh` do ZramTG24 para garantir que a swap esteja li
 ## 🛠️ Como Utilizar
 
 O módulo já configura o binário no sistema via `service.sh`.
-1. Abra o **Termux**.
-2. Digite `game` ou `su -c /data/adb/modules/gamehub_termux/system/bin/booster.sh`
+1. Abra o **[Termux](https://github.com/termux/termux-app)**.
+2. Digite `play` ou`su -c /data/adb/modules/GameHub-PRO-X/system/bin/booster.sh`
 3. Siga o menu para adicionar jogos, configurar a whitelist ou iniciar a jogatina.
 
 ---
@@ -45,5 +45,5 @@ O módulo já configura o binário no sistema via `service.sh`.
 ## 👤 Créditos e Licença*
 * **Desenvolvedor**: [@inrryoff](https://github.com/inrryoff)
 * **Licença:** MIT (Pode usar e modificar, desde que mantenha os créditos ao autor original).
-* **Projeto**: Game Hub ProX G24
+* **Projeto**: GameHub PRO-X
 
