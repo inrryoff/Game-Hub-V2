@@ -13,8 +13,7 @@ O **GameHub** é um ecossistema de otimização de baixo nível desenvolvido esp
 Este módulo **NÃO** é genérico. Ele foi projetado sob medida:
 *   **📱 Dispositivo Alvo:** Exclusivo para **Moto G24**.
 *   **⚡ Compatibilidade:** Não testado porem em tese deve ra ser compativel não recomendado o uso deste modulo para **Moto G24 Power** e qualquer outro dispositivo.
-*   **🛠️ Ambiente:** Desenvolvido e otimizado em **GSI: CrDroid**.
-*   **🚧 Versão Stock:** A versão para a ROM Original (Stock) ainda está em fase de desenvolvimento e testes. Use por sua conta e risco em ROMs Stock.
+*   **🛠️ Ambiente:** Desenvolvido e testado em **GSI: CrDroid**.
 
 ---
 
