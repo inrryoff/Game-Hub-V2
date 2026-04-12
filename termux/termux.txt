@@ -1,0 +1,1 @@
+termux.apk falso para add mas o apk do termux vem integrado com o modulo GameHub-PRO-X
