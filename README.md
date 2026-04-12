@@ -15,6 +15,38 @@ Este módulo **NÃO** é genérico. Ele foi projetado sob medida:
 *   **⚡ Compatibilidade:** Não testado porem em tese deve ra ser compativel não recomendado o uso deste modulo para **Moto G24/Power** e qualquer outro dispositivo.
 *   **🛠️ Ambiente:** Desenvolvido e testado em **GSI: CrDroid**.
 
+## ⚠️ Avisos importantes
+
+> **🔥 Este módulo é EXTREMAMENTE AGRESSIVO!**
+> 
+> - **Superaquecimento**: Use com cooler externo (obrigatório para sessões longas)
+> - **Bateria**: O consumo será maior devido à prioridade máxima da CPU
+> - **Estabilidade**: Pode causar lentidão no sistema fora do jogo
+
+## 📱 Dispositivos compatíveis
+
+| Dispositivo | Codinome | Modelo | SoC |
+|-------------|----------|--------|-----|
+| Moto G24 | fogorow | XT2423, XT2425 | Helio G85 |
+| Moto G24 Power | fogorow | XT2425 | Helio G85 |
+| Outros Helio G85/G80 | - | - | MT6768/MT6769 |
+
+## 📊 Otimizações aplicadas
+
+| Recurso | O que faz | Comando |
+|---------|-----------|---------|
+| CPU | Prioridade máxima | `chrt -f -p 99` + `renice -20` |
+| I/O | Tempo real | `ionice -c 1 -n 0` |
+| Memória | Proteção OOM | `oom_score_adj -1000` |
+| GPU | Vulkan forçado | `debug.hwui.renderer skiavk` |
+
+## 🐛 Reportar problemas
+
+Abra uma issue no GitHub com:
+- Modelo do celular
+- ROM (Stock/GSI)
+- Log do módulo: `/data/local/tmp/logs/gamehub.log`
+
 ---
 
 ## 🛡️ REQUISITO OBRIGATÓRIO
@@ -23,16 +55,6 @@ Este módulo funciona em simbiose com o gerenciamento de memória. É **obrigat�
 👉 **[ZramTG24](https://github.com/inrryoff/ZramTG24)**
 
 O GameHub-PRO-X aciona o motor `ram.sh` do ZramTG24 para garantir que a swap esteja limpa e comprimida antes de injetar os perfis de performance no kernel.
-
----
-
-## 🚀 Funcionalidades Principais
-
-*   **⚡ Sincronização ZRAM:** Reset automático via ZramTG24.
-*   **🔥 CPU Performance Boost:** Força o governor de performance em todos os núcleos do G24.
-*   **🚫 Extermínio de Apps (Modo Bruto):** Limpeza profunda de processos em segundo plano para liberar RAM.
-*   **🛡️ Proteção de Processo (OOM):** Define o Score OOM do jogo para `-1000` (Imortal).
-*   **💎 Prioridade de Hardware:** Aplica `renice -20` e `ionice` de tempo real no PID do jogo via Termux.
 
 ---
 
@@ -53,8 +75,12 @@ O módulo já configura o binário no sistema via `customize.sh`.
 
 ## 👤 Créditos e Licença*
 * **Desenvolvedor**: [@inrryoff](https://github.com/inrryoff)
-* **termux:** Utilizado no modulo, decidi implementar o `apk` do termux no modulo todos direitos reservaods a equipe de desemvolvimento do termux.
-* **Menções:** [@termux](https://github.com/termux), [@mahisataruna](https://github.com/mahisataruna/)
 * **Licença:** MIT (Pode usar e modificar, desde que mantenha os créditos ao autor original).
 * **Projeto**: GameHub PRO-X
 
+
+## 🙏 Agradecimentos
+
+- **[Termux](https://github.com/termux)** - Terminal emulador para Android (GPL v3.0)
+- **[Mahisataruna](https://github.com/mahisataruna/)** - Pelo módulo universal que inspirou partes deste projeto
+- **[Magisk](https://github.com/topjohnwu/magisk/releases)** - A base de tudo
