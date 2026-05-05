@@ -1,0 +1,15 @@
+Termux - Android terminal emulator and Linux environment
+
+License: GNU General Public License v3.0
+Copyright (c) 2020-2024 Termux community
+
+This module includes a modified version of Termux (Fork: https://github.com/inrryoff/termux-app).
+Modifications: performance optimizations in terminal renderer.
+Source code of modifications: https://github.com/inrryoff/termux-app
+
+Original Termux (unmodified) source code: https://github.com/termux/termux-app
+
+---
+
+GameHub PRO-X is distributed under MIT License.
+Termux (modified version) remains under GPL v3.0.
