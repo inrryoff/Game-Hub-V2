@@ -15,7 +15,8 @@ Este módulo **NÃO** é genérico. Ele foi projetado sob medida:*
 
 ---
 
-> [!CAUTION]>  **Atenção aos riscos de uso excessivo**
+> [!CAUTION]
+>  **Atenção aos riscos de uso excessivo**
 > - **Superaquecimento**: Use com cooler externo (obrigatório para sessões longas)
 > - **Bateria**: O consumo será maior devido à prioridade máxima da CPU
 > - **Estabilidade**: Pode causar lentidão no sistema fora do jogo
