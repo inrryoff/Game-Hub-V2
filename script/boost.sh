@@ -11,7 +11,7 @@ LOG_DIR="/data/local/tmp/logs"
 LOG_FILE="$LOG_DIR/gamehub.log"
 LOG_ERROR="$LOG_DIR/gamehub_err.log"
 
-_VERSION="5.0"
+_VERSION="5.1"
 _SCRIPT_NAME="GameHub-PRO-X" 
 _AUTHOR="INRRYOFF"
 
@@ -304,9 +304,8 @@ exterminar_apps() {
         fi
     done
 
-    sync && echo 1 > /proc/sys/vm/drop_caches
+    sync && echo 3 > /proc/sys/vm/drop_caches
     pm trim-caches 999G &
-
     log "Total de apps fechados: $count"
 }
 
@@ -448,7 +447,7 @@ jogar() {
     fi
     
     if [ -f "/data/adb/modules/ZramTG24/ram.sh" ]; then
-        sh "/data/adb/modules/ZramTG24/ram.sh"
+        sh "/data/adb/modules/ZramTG24/ram.sh lz4"
     fi
     
     resetprop sys.lmk.minfree_levels "6144:0,12288:50,16384:100,20480:150,28672:200,40960:300"
